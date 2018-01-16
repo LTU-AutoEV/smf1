@@ -1,0 +1,8 @@
+prefix=/home/ben/workspaces/ROS/smf1/devel
+
+Name: velodyne_description
+Description: Description of velodyne_description
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/ben/workspaces/ROS/smf1/devel/lib 
+Requires: 

@@ -1,0 +1,14 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/ben/workspaces/ROS/smf1/src/velodyne_description/src/velodyne_plugin.cc
+gazebo/gazebo.hh
+-
+gazebo/physics/physics.hh
+-
+

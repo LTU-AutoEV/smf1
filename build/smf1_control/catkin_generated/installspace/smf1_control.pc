@@ -1,0 +1,8 @@
+prefix=/home/ben/workspaces/ROS/smf1/install
+
+Name: smf1_control
+Description: Description of smf1_control
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/ben/workspaces/ROS/smf1/install/lib 
+Requires: 

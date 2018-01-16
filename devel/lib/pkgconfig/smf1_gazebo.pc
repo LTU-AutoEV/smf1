@@ -1,0 +1,8 @@
+prefix=/home/ben/workspaces/ROS/smf1/devel
+
+Name: smf1_gazebo
+Description: Description of smf1_gazebo
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/ben/workspaces/ROS/smf1/devel/lib 
+Requires: 
