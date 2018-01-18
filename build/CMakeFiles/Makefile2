@@ -245,7 +245,7 @@ gtest/preinstall:
 gtest/CMakeFiles/gtest.dir/all:
 	$(MAKE) -f gtest/CMakeFiles/gtest.dir/build.make gtest/CMakeFiles/gtest.dir/depend
 	$(MAKE) -f gtest/CMakeFiles/gtest.dir/build.make gtest/CMakeFiles/gtest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ben/workspaces/ROS/smf1/build/CMakeFiles --progress-num=1,2 "Built target gtest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ben/workspaces/ROS/smf1/build/CMakeFiles --progress-num=3,4 "Built target gtest"
 .PHONY : gtest/CMakeFiles/gtest.dir/all
 
 # Build rule for subdir invocation for target.
@@ -277,7 +277,7 @@ clean: gtest/CMakeFiles/gtest.dir/clean
 gtest/CMakeFiles/gtest_main.dir/all: gtest/CMakeFiles/gtest.dir/all
 	$(MAKE) -f gtest/CMakeFiles/gtest_main.dir/build.make gtest/CMakeFiles/gtest_main.dir/depend
 	$(MAKE) -f gtest/CMakeFiles/gtest_main.dir/build.make gtest/CMakeFiles/gtest_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ben/workspaces/ROS/smf1/build/CMakeFiles --progress-num=3,4 "Built target gtest_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ben/workspaces/ROS/smf1/build/CMakeFiles --progress-num=5,6 "Built target gtest_main"
 .PHONY : gtest/CMakeFiles/gtest_main.dir/all
 
 # Build rule for subdir invocation for target.
@@ -369,6 +369,24 @@ smf1_description/clean:
 smf1_description/preinstall:
 
 .PHONY : smf1_description/preinstall
+
+#=============================================================================
+# Directory level rules for directory velodyne_description
+
+# Convenience name for "all" pass in the directory.
+velodyne_description/all:
+
+.PHONY : velodyne_description/all
+
+# Convenience name for "clean" pass in the directory.
+velodyne_description/clean:
+
+.PHONY : velodyne_description/clean
+
+# Convenience name for "preinstall" pass in the directory.
+velodyne_description/preinstall:
+
+.PHONY : velodyne_description/preinstall
 
 #=============================================================================
 # Directory level rules for directory smf1_gazebo
@@ -2595,6 +2613,61 @@ smf1_gazebo/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/clean:
 
 # clean rule for target.
 clean: smf1_gazebo/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory velodyne_gazebo_plugins
+
+# Convenience name for "all" pass in the directory.
+velodyne_gazebo_plugins/all: velodyne_gazebo_plugins/CMakeFiles/gazebo_ros_velodyne_laser.dir/all
+
+.PHONY : velodyne_gazebo_plugins/all
+
+# Convenience name for "clean" pass in the directory.
+velodyne_gazebo_plugins/clean: velodyne_gazebo_plugins/CMakeFiles/gazebo_ros_velodyne_laser.dir/clean
+
+.PHONY : velodyne_gazebo_plugins/clean
+
+# Convenience name for "preinstall" pass in the directory.
+velodyne_gazebo_plugins/preinstall:
+
+.PHONY : velodyne_gazebo_plugins/preinstall
+
+#=============================================================================
+# Target rules for target velodyne_gazebo_plugins/CMakeFiles/gazebo_ros_velodyne_laser.dir
+
+# All Build rule for target.
+velodyne_gazebo_plugins/CMakeFiles/gazebo_ros_velodyne_laser.dir/all:
+	$(MAKE) -f velodyne_gazebo_plugins/CMakeFiles/gazebo_ros_velodyne_laser.dir/build.make velodyne_gazebo_plugins/CMakeFiles/gazebo_ros_velodyne_laser.dir/depend
+	$(MAKE) -f velodyne_gazebo_plugins/CMakeFiles/gazebo_ros_velodyne_laser.dir/build.make velodyne_gazebo_plugins/CMakeFiles/gazebo_ros_velodyne_laser.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ben/workspaces/ROS/smf1/build/CMakeFiles --progress-num=1,2 "Built target gazebo_ros_velodyne_laser"
+.PHONY : velodyne_gazebo_plugins/CMakeFiles/gazebo_ros_velodyne_laser.dir/all
+
+# Include target in all.
+all: velodyne_gazebo_plugins/CMakeFiles/gazebo_ros_velodyne_laser.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+velodyne_gazebo_plugins/CMakeFiles/gazebo_ros_velodyne_laser.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ben/workspaces/ROS/smf1/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 velodyne_gazebo_plugins/CMakeFiles/gazebo_ros_velodyne_laser.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ben/workspaces/ROS/smf1/build/CMakeFiles 0
+.PHONY : velodyne_gazebo_plugins/CMakeFiles/gazebo_ros_velodyne_laser.dir/rule
+
+# Convenience name for target.
+gazebo_ros_velodyne_laser: velodyne_gazebo_plugins/CMakeFiles/gazebo_ros_velodyne_laser.dir/rule
+
+.PHONY : gazebo_ros_velodyne_laser
+
+# clean rule for target.
+velodyne_gazebo_plugins/CMakeFiles/gazebo_ros_velodyne_laser.dir/clean:
+	$(MAKE) -f velodyne_gazebo_plugins/CMakeFiles/gazebo_ros_velodyne_laser.dir/build.make velodyne_gazebo_plugins/CMakeFiles/gazebo_ros_velodyne_laser.dir/clean
+.PHONY : velodyne_gazebo_plugins/CMakeFiles/gazebo_ros_velodyne_laser.dir/clean
+
+# clean rule for target.
+clean: velodyne_gazebo_plugins/CMakeFiles/gazebo_ros_velodyne_laser.dir/clean
 
 .PHONY : clean
 

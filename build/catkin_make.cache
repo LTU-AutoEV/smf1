@@ -1,2 +1,2 @@
-smf1_control:smf1_description:smf1_gazebo
+smf1_control:smf1_description:smf1_gazebo:velodyne_description:velodyne_gazebo_plugins
 -DCATKIN_DEVEL_PREFIX=/home/ben/workspaces/ROS/smf1/devel -DCMAKE_INSTALL_PREFIX=/home/ben/workspaces/ROS/smf1/install -G Unix Makefiles

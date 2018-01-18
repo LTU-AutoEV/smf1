@@ -1,0 +1,8 @@
+prefix=/home/ben/workspaces/ROS/smf1/devel
+
+Name: velodyne_gazebo_plugins
+Description: Description of velodyne_gazebo_plugins
+Version: 1.0.6
+Cflags: -I/home/ben/workspaces/ROS/smf1/src/velodyne_gazebo_plugins/include
+Libs: -L/home/ben/workspaces/ROS/smf1/devel/lib -lgazebo_ros_velodyne_laser
+Requires: roscpp sensor_msgs gazebo_ros

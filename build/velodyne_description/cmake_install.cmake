@@ -47,3 +47,13 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/velodyne_description" TYPE FILE FILES "/home/ben/workspaces/ROS/smf1/src/velodyne_description/package.xml")
 endif()
 
+if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/velodyne_description" TYPE DIRECTORY FILES
+    "/home/ben/workspaces/ROS/smf1/src/velodyne_description/launch"
+    "/home/ben/workspaces/ROS/smf1/src/velodyne_description/meshes"
+    "/home/ben/workspaces/ROS/smf1/src/velodyne_description/rviz"
+    "/home/ben/workspaces/ROS/smf1/src/velodyne_description/urdf"
+    "/home/ben/workspaces/ROS/smf1/src/velodyne_description/world"
+    )
+endif()
+

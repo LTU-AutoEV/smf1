@@ -89,16 +89,16 @@ rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
 
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-.PHONY : edit_cache
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
 
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
+# Special rule for the target install/strip
+install/strip/fast: install/strip
 
-.PHONY : edit_cache/fast
+.PHONY : install/strip/fast
 
 # Special rule for the target install/local
 install/local: preinstall
@@ -111,17 +111,6 @@ install/local/fast: install/local
 
 .PHONY : install/local/fast
 
-# Special rule for the target install/strip
-install/strip: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip
-
-# Special rule for the target install/strip
-install/strip/fast: install/strip
-
-.PHONY : install/strip/fast
-
 # Special rule for the target test
 test:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
@@ -132,6 +121,17 @@ test:
 test/fast: test
 
 .PHONY : test/fast
+
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -165,48 +165,6 @@ depend:
 	cd /home/ben/workspaces/ROS/smf1/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-# Convenience name for target.
-velodyne_description/CMakeFiles/velodyne_plugin.dir/rule:
-	cd /home/ben/workspaces/ROS/smf1/build && $(MAKE) -f CMakeFiles/Makefile2 velodyne_description/CMakeFiles/velodyne_plugin.dir/rule
-.PHONY : velodyne_description/CMakeFiles/velodyne_plugin.dir/rule
-
-# Convenience name for target.
-velodyne_plugin: velodyne_description/CMakeFiles/velodyne_plugin.dir/rule
-
-.PHONY : velodyne_plugin
-
-# fast build rule for target.
-velodyne_plugin/fast:
-	cd /home/ben/workspaces/ROS/smf1/build && $(MAKE) -f velodyne_description/CMakeFiles/velodyne_plugin.dir/build.make velodyne_description/CMakeFiles/velodyne_plugin.dir/build
-.PHONY : velodyne_plugin/fast
-
-src/velodyne_plugin.o: src/velodyne_plugin.cc.o
-
-.PHONY : src/velodyne_plugin.o
-
-# target to build an object file
-src/velodyne_plugin.cc.o:
-	cd /home/ben/workspaces/ROS/smf1/build && $(MAKE) -f velodyne_description/CMakeFiles/velodyne_plugin.dir/build.make velodyne_description/CMakeFiles/velodyne_plugin.dir/src/velodyne_plugin.cc.o
-.PHONY : src/velodyne_plugin.cc.o
-
-src/velodyne_plugin.i: src/velodyne_plugin.cc.i
-
-.PHONY : src/velodyne_plugin.i
-
-# target to preprocess a source file
-src/velodyne_plugin.cc.i:
-	cd /home/ben/workspaces/ROS/smf1/build && $(MAKE) -f velodyne_description/CMakeFiles/velodyne_plugin.dir/build.make velodyne_description/CMakeFiles/velodyne_plugin.dir/src/velodyne_plugin.cc.i
-.PHONY : src/velodyne_plugin.cc.i
-
-src/velodyne_plugin.s: src/velodyne_plugin.cc.s
-
-.PHONY : src/velodyne_plugin.s
-
-# target to generate assembly for a file
-src/velodyne_plugin.cc.s:
-	cd /home/ben/workspaces/ROS/smf1/build && $(MAKE) -f velodyne_description/CMakeFiles/velodyne_plugin.dir/build.make velodyne_description/CMakeFiles/velodyne_plugin.dir/src/velodyne_plugin.cc.s
-.PHONY : src/velodyne_plugin.cc.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -216,14 +174,10 @@ help:
 	@echo "... list_install_components"
 	@echo "... install"
 	@echo "... rebuild_cache"
-	@echo "... edit_cache"
-	@echo "... velodyne_plugin"
-	@echo "... install/local"
 	@echo "... install/strip"
+	@echo "... install/local"
 	@echo "... test"
-	@echo "... src/velodyne_plugin.o"
-	@echo "... src/velodyne_plugin.i"
-	@echo "... src/velodyne_plugin.s"
+	@echo "... edit_cache"
 .PHONY : help
 
 

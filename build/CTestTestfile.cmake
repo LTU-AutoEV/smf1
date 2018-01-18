@@ -7,4 +7,6 @@
 subdirs(gtest)
 subdirs(smf1_control)
 subdirs(smf1_description)
+subdirs(velodyne_description)
 subdirs(smf1_gazebo)
+subdirs(velodyne_gazebo_plugins)

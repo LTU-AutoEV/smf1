@@ -1140,6 +1140,19 @@ actionlib_msgs_generate_messages_lisp/fast:
 	$(MAKE) -f smf1_gazebo/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/build.make smf1_gazebo/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/build
 .PHONY : actionlib_msgs_generate_messages_lisp/fast
 
+#=============================================================================
+# Target rules for targets named gazebo_ros_velodyne_laser
+
+# Build rule for target.
+gazebo_ros_velodyne_laser: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 gazebo_ros_velodyne_laser
+.PHONY : gazebo_ros_velodyne_laser
+
+# fast build rule for target.
+gazebo_ros_velodyne_laser/fast:
+	$(MAKE) -f velodyne_gazebo_plugins/CMakeFiles/gazebo_ros_velodyne_laser.dir/build.make velodyne_gazebo_plugins/CMakeFiles/gazebo_ros_velodyne_laser.dir/build
+.PHONY : gazebo_ros_velodyne_laser/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -1228,6 +1241,7 @@ help:
 	@echo "... actionlib_generate_messages_lisp"
 	@echo "... actionlib_msgs_generate_messages_eus"
 	@echo "... actionlib_msgs_generate_messages_lisp"
+	@echo "... gazebo_ros_velodyne_laser"
 .PHONY : help
 
 

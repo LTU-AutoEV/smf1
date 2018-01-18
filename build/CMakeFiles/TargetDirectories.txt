@@ -34,6 +34,13 @@
 /home/ben/workspaces/ROS/smf1/build/smf1_description/CMakeFiles/install/local.dir
 /home/ben/workspaces/ROS/smf1/build/smf1_description/CMakeFiles/test.dir
 /home/ben/workspaces/ROS/smf1/build/smf1_description/CMakeFiles/edit_cache.dir
+/home/ben/workspaces/ROS/smf1/build/velodyne_description/CMakeFiles/list_install_components.dir
+/home/ben/workspaces/ROS/smf1/build/velodyne_description/CMakeFiles/install.dir
+/home/ben/workspaces/ROS/smf1/build/velodyne_description/CMakeFiles/rebuild_cache.dir
+/home/ben/workspaces/ROS/smf1/build/velodyne_description/CMakeFiles/install/strip.dir
+/home/ben/workspaces/ROS/smf1/build/velodyne_description/CMakeFiles/install/local.dir
+/home/ben/workspaces/ROS/smf1/build/velodyne_description/CMakeFiles/test.dir
+/home/ben/workspaces/ROS/smf1/build/velodyne_description/CMakeFiles/edit_cache.dir
 /home/ben/workspaces/ROS/smf1/build/smf1_gazebo/CMakeFiles/edit_cache.dir
 /home/ben/workspaces/ROS/smf1/build/smf1_gazebo/CMakeFiles/install/strip.dir
 /home/ben/workspaces/ROS/smf1/build/smf1_gazebo/CMakeFiles/trajectory_msgs_generate_messages_py.dir
@@ -108,3 +115,11 @@
 /home/ben/workspaces/ROS/smf1/build/smf1_gazebo/CMakeFiles/actionlib_generate_messages_lisp.dir
 /home/ben/workspaces/ROS/smf1/build/smf1_gazebo/CMakeFiles/actionlib_msgs_generate_messages_eus.dir
 /home/ben/workspaces/ROS/smf1/build/smf1_gazebo/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir
+/home/ben/workspaces/ROS/smf1/build/velodyne_gazebo_plugins/CMakeFiles/list_install_components.dir
+/home/ben/workspaces/ROS/smf1/build/velodyne_gazebo_plugins/CMakeFiles/install.dir
+/home/ben/workspaces/ROS/smf1/build/velodyne_gazebo_plugins/CMakeFiles/rebuild_cache.dir
+/home/ben/workspaces/ROS/smf1/build/velodyne_gazebo_plugins/CMakeFiles/edit_cache.dir
+/home/ben/workspaces/ROS/smf1/build/velodyne_gazebo_plugins/CMakeFiles/gazebo_ros_velodyne_laser.dir
+/home/ben/workspaces/ROS/smf1/build/velodyne_gazebo_plugins/CMakeFiles/install/strip.dir
+/home/ben/workspaces/ROS/smf1/build/velodyne_gazebo_plugins/CMakeFiles/install/local.dir
+/home/ben/workspaces/ROS/smf1/build/velodyne_gazebo_plugins/CMakeFiles/test.dir

@@ -119,7 +119,9 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/home/ben/workspaces/ROS/smf1/build/gtest/cmake_install.cmake")
   include("/home/ben/workspaces/ROS/smf1/build/smf1_control/cmake_install.cmake")
   include("/home/ben/workspaces/ROS/smf1/build/smf1_description/cmake_install.cmake")
+  include("/home/ben/workspaces/ROS/smf1/build/velodyne_description/cmake_install.cmake")
   include("/home/ben/workspaces/ROS/smf1/build/smf1_gazebo/cmake_install.cmake")
+  include("/home/ben/workspaces/ROS/smf1/build/velodyne_gazebo_plugins/cmake_install.cmake")
 
 endif()
 
