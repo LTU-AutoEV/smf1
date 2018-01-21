@@ -51,11 +51,47 @@
         <pose>3.500000 -7.000000 0.000000 0.000000 0.000000 1.500000</pose>
       </include>
     </model>
+		<model name="construction_barrel">
+      <include>
+        <uri>model://construction_barrel</uri>
+        <pose>-5.00000 -3.000000 0.000000 0.000000 0.000000 1.500000</pose>
+      </include>
+    </model>
+		<model name="construction_cone">
+      <include>
+        <uri>model://construction_cone</uri>
+        <pose>2.00000 -5.000000 0.000000 0.000000 0.000000 0.000000</pose>
+      </include>
+    </model>
+		<model name="cube_1">
+      <include>
+        <uri>model://cube_20k</uri>
+        <pose>1.65000 3.380000 5.000000 0.000000 0.000000 0.000000</pose>
+      </include>
+    </model>
+		<!--<model name="cube_2">
+      <include>
+        <uri>model://cube_20k</uri>
+        <pose>2.70000 2.350000 0.000000 0.000000 0.000000 0.000000</pose>
+      </include>
+    </model>
+		<model name="cube_3">
+      <include>
+        <uri>model://cube_20k</uri>
+        <pose>2.70000 3.3800000 200.000000 0.000000 0.000000 0.000000</pose>
+      </include>
+    </model>
+		<!--<model name="cube_4">
+      <include>
+        <uri>model://cube_20k</uri>
+        <pose>1.70000 2.4000000 5.000000 0.000000 0.000000 0.000000</pose>
+      </include>
+    </model>-->
 
     <model name="wall1">
       <include>
         <uri>model://drc_practice_white_jersey_barrier</uri>
-        <pose>9.000000 9.000000 0.000000 0.000000 0.000000 0.000000</pose>
+        <pose>8.000000 8.000000 0.000000 0.000000 0.000000 0.800000</pose>
       </include>
     </model>
     <model name="wall2">
@@ -106,19 +142,10 @@
         <pose>9.000000 -7.000000 0.000000 0.000000 0.000000 0.000000</pose>
       </include>
     </model>
-    <model name="wall10">
-      <include>
-        <uri>model://drc_practice_white_jersey_barrier</uri>
-        <pose>9.000000 -9.000000 0.000000 0.000000 0.000000 0.000000</pose>
-      </include>
-    </model>
 
-    <model name="wall11">
-      <include>
-        <uri>model://drc_practice_white_jersey_barrier</uri>
-        <pose>-9.000000 9.000000 0.000000 0.000000 0.000000 0.000000</pose>
-      </include>
-    </model>
+
+
+
     <model name="wall12">
       <include>
         <uri>model://drc_practice_white_jersey_barrier</uri>
@@ -170,9 +197,126 @@
     <model name="wall20">
       <include>
         <uri>model://drc_practice_white_jersey_barrier</uri>
-        <pose>9.000000 -9.000000 0.000000 0.000000 0.000000 0.000000</pose>
+        <pose>8.000000 -8.000000 0.000000 0.000000 0.000000 -0.800000</pose>
       </include>
     </model>
+
+
+
+
+    <model name="wall21">
+      <include>
+        <uri>model://drc_practice_white_jersey_barrier</uri>
+        <pose>6.800000 -8.800000 0.000000 0.000000 0.000000 1.600000</pose>
+      </include>
+    </model>
+    <model name="wall21">
+      <include>
+        <uri>model://drc_practice_white_jersey_barrier</uri>
+        <pose>5.000000 -9.000000 0.000000 0.000000 0.000000 1.600000</pose>
+      </include>
+    </model>
+    <model name="wall23">
+      <include>
+        <uri>model://drc_practice_white_jersey_barrier</uri>
+        <pose>3.000000 -9.000000 0.000000 0.000000 0.000000 1.600000</pose>
+      </include>
+    </model>
+    <model name="wall24">
+      <include>
+        <uri>model://drc_practice_white_jersey_barrier</uri>
+        <pose>1.000000 -9.000000 0.000000 0.000000 0.000000 1.600000</pose>
+      </include>
+    </model>
+    <model name="wall25">
+      <include>
+        <uri>model://drc_practice_white_jersey_barrier</uri>
+        <pose>-1.000000 -9.000000 0.000000 0.000000 0.000000 1.600000</pose>
+      </include>
+    </model>
+    <model name="wall26">
+      <include>
+        <uri>model://drc_practice_white_jersey_barrier</uri>
+        <pose>-3.000000 -9.000000 0.000000 0.000000 0.000000 1.600000</pose>
+      </include>
+    </model>
+    <model name="wall27">
+      <include>
+        <uri>model://drc_practice_white_jersey_barrier</uri>
+        <pose>-5.000000 -9.000000 0.000000 0.000000 0.000000 1.600000</pose>
+      </include>
+    </model>
+    <model name="wall28">
+      <include>
+        <uri>model://drc_practice_white_jersey_barrier</uri>
+        <pose>-7.000000 -9.000000 0.000000 0.000000 0.000000 1.600000</pose>
+      </include>
+    </model>
+    <model name="wall29">
+      <include>
+        <uri>model://drc_practice_white_jersey_barrier</uri>
+        <pose>-8.000000 -8.000000 0.000000 0.000000 0.000000 0.800000</pose>
+      </include>
+    </model>
+
+
+
+
+    <model name="wall30">
+      <include>
+        <uri>model://drc_practice_white_jersey_barrier</uri>
+        <pose>7.000000 9.000000 0.000000 0.000000 0.000000 1.600000</pose>
+      </include>
+    </model>
+    <model name="wall31">
+      <include>
+        <uri>model://drc_practice_white_jersey_barrier</uri>
+        <pose>5.000000 9.000000 0.000000 0.000000 0.000000 1.600000</pose>
+      </include>
+    </model>
+    <model name="wall32">
+      <include>
+        <uri>model://drc_practice_white_jersey_barrier</uri>
+        <pose>3.000000 9.000000 0.000000 0.000000 0.000000 1.600000</pose>
+      </include>
+    </model>
+    <model name="wall33">
+      <include>
+        <uri>model://drc_practice_white_jersey_barrier</uri>
+        <pose>1.000000 9.000000 0.000000 0.000000 0.000000 1.600000</pose>
+      </include>
+    </model>
+    <model name="wall34">
+      <include>
+        <uri>model://drc_practice_white_jersey_barrier</uri>
+        <pose>-1.000000 9.000000 0.000000 0.000000 0.000000 1.600000</pose>
+      </include>
+    </model>
+    <model name="wall35">
+      <include>
+        <uri>model://drc_practice_white_jersey_barrier</uri>
+        <pose>-3.000000 9.000000 0.000000 0.000000 0.000000 1.600000</pose>
+      </include>
+    </model>
+    <model name="wall36">
+      <include>
+        <uri>model://drc_practice_white_jersey_barrier</uri>
+        <pose>-5.000000 9.000000 0.000000 0.000000 0.000000 1.600000</pose>
+      </include>
+    </model>
+    <model name="wall37">
+      <include>
+        <uri>model://drc_practice_white_jersey_barrier</uri>
+        <pose>-7.000000 9.000000 0.000000 0.000000 0.000000 1.600000</pose>
+      </include>
+    </model>
+    <model name="wall38">
+      <include>
+        <uri>model://drc_practice_white_jersey_barrier</uri>
+        <pose>-8.000000 8.000000 0.000000 0.000000 0.000000 -0.800000</pose>
+      </include>
+    </model>
+
 
   </world>
 </sdf>
